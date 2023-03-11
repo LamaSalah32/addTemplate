@@ -16,8 +16,6 @@ void addTemplate(string from, string to){
     string txt, dir = "Templates/";
     ifstream Template(dir + from),  curr(to); 
     ofstream tmp("tmp.txt"); 
-   // cout << dir + from << "\n";
-
 
     while(getline(curr, txt)){
         tmp << txt << "\n";
