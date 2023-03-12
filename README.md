@@ -11,9 +11,30 @@ After some changes will you make in your working  directory, all you need is to 
 
 **but now,** what are these changes?
 
-1. **First,** you need to create a Template folder in your working directory to save all templates and functions in it.
+1. **First,** add the (addTemplate.h) file to your working directory. 
+
+---
+
+2. **Then,** you need to create a Template folder also in your working directory to save all templates and functions in it.
 **But note,** If you need to change the folder name, also you need to change it in addTemplate.h file **(change dir variable)**:
 
     **addTemplate.h &rarr; addTemp** function **&rarr; dir = "Templates/"**
     
     <img src="images/changeDir.jpeg"  width="600"/>  
+
+----
+
+3. **Finally**, create cpp file, and add in it the following lines code : 
+ -
+        #ifndef ONLINE_JUDGE
+        #include "addTemplate.h"
+        #endif
+
+- 
+       void addTemplate(string s, string t){ 
+            #ifndef ONLINE_JUDGE
+            addTemp(s, t);
+            #endif
+        }
+
+    <img src="images/code.png"  width="6000"/>  
