@@ -17,7 +17,7 @@ void addTemplate(string s, string t){
 }
 
 void solve(){
-    addTemplate("dsu", "a.cpp");
+    addTemplate("DSU", "a.cpp");
 }
 
 int main() {
