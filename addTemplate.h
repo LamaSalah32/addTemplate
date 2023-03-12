@@ -14,13 +14,13 @@ string spaceRemover(string s){
 
 void exist(std::ifstream& f){
     if (not f.good()){
-        throw invalid_argument("The file does not exist!");
+        throw invalid_argument("Nothing has been added to your code because the file does not exist!");
     }
 }
 
 void isEmpty(std::ifstream& f){
     if (f.peek() == std::ifstream::traits_type::eof()){
-        throw invalid_argument("The file is empty!");
+        throw invalid_argument("Nothing has been added to your code because The file is empty!");
     }
 }
 
