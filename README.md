@@ -20,7 +20,7 @@ After some changes will you make in your working  directory, all you need is to 
 
     **addTemplate.h &rarr; addTemp** function **&rarr; dir = "Templates/"**
     
-    <img src="images/changeDir.jpeg"  width="600"/>  
+    <img src="images/changeDir.jpeg"  width="550"/>  
 
 ----
 
@@ -37,4 +37,4 @@ After some changes will you make in your working  directory, all you need is to 
             #endif
         }
 
-    <img src="images/code.png"  width="6000"/>  
+    <img src="images/code.png"  width="600"/>  
