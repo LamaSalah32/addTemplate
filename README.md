@@ -12,8 +12,8 @@ After some changes will you make in your working  directory, all you need is to 
 **but now,** what are these changes?
 
 1. **First,** you need to create a Template folder in your working directory to save all templates and functions in it.
-But note, If you need to change the folder name, also you need to change it in addTemplate.h file **(change dir variable)**:
+**But note,** If you need to change the folder name, also you need to change it in addTemplate.h file **(change dir variable)**:
 
-    **addTemplate.h** ➡ **addTemp** function ➡ **dir = "Templates/"**
+    **addTemplate.h &rarr; addTemp** function **&rarr; dir = "Templates/"**
     
-    <img src="images/changeDir.jpeg"  width="430"/>  
+    <img src="images/changeDir.jpeg"  width="600"/>  
