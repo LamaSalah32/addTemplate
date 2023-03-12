@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std ;
 
-string removespace(string s){
+string spaceRemover(string s){
     for (int i = 0; i < s.length(); i++) {
         if (s[i] == ' ') {
             s.erase(s.begin() + i);
@@ -12,14 +12,39 @@ string removespace(string s){
     return s;
 }
 
-void addTemplate(string from, string to){
+void exist(std::ifstream& f){
+    if (not f.good()){
+        throw invalid_argument("The file does not exist!");
+    }
+}
+
+void isEmpty(std::ifstream& f){
+    if (f.peek() == std::ifstream::traits_type::eof()){
+        throw invalid_argument("The file is empty!");
+    }
+}
+
+void addTemp(string from, string to){
     string txt, dir = "Templates/";
-    ifstream Template(dir + from),  curr(to); 
-    ofstream tmp("tmp.txt"); 
+    ifstream Template(dir + from),  curr(to);
+
+    try{
+        exist(Template);
+        isEmpty(Template);
+
+    } catch (invalid_argument& e){
+        cerr << e.what() << endl;
+        Template.close();
+        curr.close();
+        return;
+    }
+
+    ofstream tmp("tmp.txt");
 
     while(getline(curr, txt)){
         tmp << txt << "\n";
-        if (removespace(txt) == "usingnamespacestd;"){
+        if (spaceRemover(txt) == "usingnamespacestd;"){
+            tmp << "\n";
             while(getline(Template, txt)){
                 tmp << txt << "\n";
             }
@@ -31,7 +56,7 @@ void addTemplate(string from, string to){
     tmp.close();
 
     ifstream newFile("tmp.txt");
-    ofstream afterInsertion(to); 
+    ofstream afterInsertion(to);
 
     while(getline(newFile, txt)){
         afterInsertion << txt << "\n";

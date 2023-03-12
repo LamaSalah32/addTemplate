@@ -1,20 +1,23 @@
 #include <bits/stdc++.h>
 
+/*-------------------------*/
 #ifndef ONLINE_JUDGE
 #include "addTemplate.h"
 #endif
+/*-----------------------*/
 
 using namespace std ;
 
+// Your templates will be added here.
 
-void addTemp (string s, string t){
+void addTemplate(string s, string t){
 #ifndef ONLINE_JUDGE
-    addTemplate(s, t);
+    addTemp(s, t);
 #endif
 }
 
 void solve(){
-    addTemp("dsu", "a.cpp");
+    addTemplate("dsu", "a.cpp");
 }
 
 int main() {
