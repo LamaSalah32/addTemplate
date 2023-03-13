@@ -1,7 +1,12 @@
 ## Just add the templates or functions you need in your code
 
-**Hello, every competitive programmer 🖐**, It occurred to me that many competitors leave a lot of templates and functions in their code to solve problems in contests fast, **but** If there is someone who wants to read your code after that to learn from you or understand the idea of the problem?  Won't he have difficulties?
-I think he gets a little annoyed and gets lost between existing templates and functions, **and for that**, I made this repository, **To solve problems in contests fast with clean and ordinary code.**
+**Hello, every competitive programmer 🖐**
+
+It occurred to me that most contestants add many templates and functions in their code so that if they face any problem during the contest and need something from them immediately, they can use it, this will save them time instead of going to get that template and copying and adding it to their code. **But, If there is someone who wants to read the code after that to understand the idea of the problem?** 
+
+I think he gets a little annoyed and wastes time looking for the functions or templates used in the code.
+
+Although most IDEs have features that make it easier, copying codes to an IDE every time to understand the problem is a time-consuming process, and it's best to read the code from the website itself **for that**, I made this repository: **To solve problems in contests fast with clear and ordinary code.**
 
 ----
 
