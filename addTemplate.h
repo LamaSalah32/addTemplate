@@ -24,8 +24,8 @@ void isEmpty(ifstream& f){
     }
 }
 
-void checkContent(string from, string to, string dir){
-    ifstream file1(dir + from),  file2(to);
+void checkContent(string from, string to, string dir, string out){
+    ifstream file1(out + dir + from),  file2(out + to);
 
     string content1 = "", content2 = "", txt;
     while (getline(file1, txt)){
@@ -47,13 +47,13 @@ void checkContent(string from, string to, string dir){
 }
 
 void addTemp(string from, string to){
-    string txt, dir = "Templates/";
-    ifstream Template(dir + from),  curr(to);
+    string txt, dir = "Templates/", out = "";
+    ifstream Template(out + dir + from),  curr(out + to);
 
     try{
         exist(Template);
         isEmpty(Template);
-        checkContent(from, to, dir);
+        checkContent(from, to, dir, out);
     } catch (invalid_argument& e){
         cerr << e.what() << endl;
         Template.close();
@@ -78,7 +78,7 @@ void addTemp(string from, string to){
     tmp.close();
 
     ifstream newFile("tmp.txt");
-    ofstream afterInsertion(to);
+    ofstream afterInsertion(out + to);
 
     while(getline(newFile, txt)){
         afterInsertion << txt << "\n";
