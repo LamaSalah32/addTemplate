@@ -2,7 +2,7 @@
 
 **Hello, every competitive programmer 🖐**
 
-It occurred to me that most contestants add many templates and functions in their code so that if they face any problem during the contest and need something from them immediately, they can use it, this will save them time instead of going to get that template and copying and adding it to their code. **But, If there is someone who wants to read the code after that to understand the idea of the problem?** 
+It occurred to me that most contestants add many templates and functions in their code so that if they face any problem during the contest and need something from them immediately, they can use it, this will save them time instead of going to get that template and copying and adding it to their code. **But,** If there is someone who wants to read the code after that to understand the idea of the problem? **Won't he have difficulties understanding and tracing the code?**
 
 I think he gets a little annoyed and wastes time looking for the functions or templates used in the code.
 
