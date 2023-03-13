@@ -21,6 +21,11 @@ After some changes will you make in your working  directory, all you need is to 
     **addTemplate.h &rarr; addTemp** function **&rarr; dir = "Templates/"**
     
     <img src="images/changeDir.jpeg"  width="550"/>  
+    
+    🔴 **NOTICE THAT!**
+    > If you use **clion** ide and add this folder and files out cmake folder, You should write **"../"** before the folder and files path name.
+    To change it go to
+        **addTemplate.h** then **addTemp function** after that change **out variable** with **"../"**
 
 ----
 
