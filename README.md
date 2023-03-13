@@ -25,7 +25,7 @@ After some changes will you make in your working  directory, all you need is to 
     🔴 **NOTICE THAT!**
     > If you use **clion** ide and add this folder and files out cmake folder, You should write **"../"** before the folder and files path name.
     To change it go to
-        **addTemplate.h** then **addTemp function** after that change **out variable** with **"../"**
+        **addTemplate.h** then, **addTemp function** after that, check if the **out variable** is equal to **"../"** or not, if not, change it.
 
 ----
 
