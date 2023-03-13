@@ -12,17 +12,22 @@ string spaceRemover(string s){
     return s;
 }
 
+// -------------------------------------
+
 void exist(ifstream& f){
     if (not f.good()){
         throw invalid_argument("Nothing has been added to your code because the file does not exist!");
     }
 }
 
+//--------------------------------------
 void isEmpty(ifstream& f){
     if (f.peek() == std::ifstream::traits_type::eof()){
         throw invalid_argument("Nothing has been added to your code because The file is empty!");
     }
 }
+
+//--------------------------------------
 
 void checkContent(string from, string to, string dir, string out){
     ifstream file1(out + dir + from),  file2(out + to);
@@ -45,6 +50,8 @@ void checkContent(string from, string to, string dir, string out){
 
     file1.close(), file2.close();
 }
+
+//--------------------------------------
 
 void addTemp(string from, string to){
     string txt, dir = "Templates/", out = "";
