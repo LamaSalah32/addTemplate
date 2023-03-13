@@ -45,7 +45,7 @@ void checkContent(string from, string to, string dir, string out){
 
     if (content2.find(content1) != string::npos) {
         file1.close(), file2.close();
-        throw invalid_argument(from + " is already exists in " + to + "!");
+        throw invalid_argument("");
     }
 
     file1.close(), file2.close();
@@ -62,7 +62,7 @@ void addTemp(string from, string to){
         isEmpty(Template);
         checkContent(from, to, dir, out);
     } catch (invalid_argument& e){
-        cerr << e.what() << endl;
+        cerr << e.what();
         Template.close();
         curr.close();
         return;
